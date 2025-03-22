@@ -2,9 +2,9 @@ import streamlit as st
 
 # Load custom CSS & JS
 def load_assets():
-    with open("styles.css", "r") as f:
+    with open("venv\styles.css", "r") as f:
         st.markdown(f"<style>{f.read()}</style>", unsafe_allow_html=True)
-    with open("animations.js", "r") as f:
+    with open("venv\animations.js", "r") as f:
         st.markdown(f"<script>{f.read()}</script>", unsafe_allow_html=True)
 
 # Apply styles
